@@ -1,0 +1,12 @@
+{% extends "students/base.html" %}
+
+{% block title %}
+    {{ block.super }}
+    - Student
+{% endblock title %}
+
+{% block content %}
+    <h2>
+        {{ students.first_name }} {{ students.last_name }}
+    </h2>
+{% endblock content %}
