@@ -10,7 +10,7 @@ def index (request):
         "students": students
     }
 
-    return render (request, "students/index.html", context)
+    return render(request, "students/index.html", context)
 
 
 def students (request, id):
@@ -20,4 +20,4 @@ def students (request, id):
         "students":students
     }
 
-    return render (request, "students/student.html", context)
+    return render(request, "students/student.html", context)

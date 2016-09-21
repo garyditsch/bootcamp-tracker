@@ -1,17 +1,14 @@
 from django.shortcuts import render
 
-# Create your views here.
-
-from django.shortcuts import render
-from .models import Student
+from .models import  Pullup
 
 # Create your views here.
 
 def index(request):
-    students = Student.objects.all()
+    pullups = Pullup.objects.all()
 
     context = {
-        "students": students
+        "pullups": pullups
     }
     
-    return render(request, "students/index.html", context)
+    return render(request, "exercise/index.html", context)
